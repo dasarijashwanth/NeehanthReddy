@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Lexend";
+  font-size: 16px;
+}
+
+.title {
+  width: auto;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 35px;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: .4rem;
+}
+
+.title h6 {
+  font-size: .8rem;
+  letter-spacing: .2rem;
+  line-height: 2;
+  color: #555;
+}
+
+.gallery {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  position: relative;
+  column-count: 3;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.gallery-item {
+  margin: 5px 5px 10px;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  color: #333;
+  border-radius: 0 0 5px 5px;
+}
+
+.gallery-item h5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 12px 20px;
+}
+
+.gallery-item h5 a {
+  float: right;
+  text-decoration: none;
+  color: grey;
+  font-size: medium;
+}
+
+.gallery-item h5 a:hover {
+  color: #333;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 20px 10px 5px;
+  font-size: .8rem;
+  color: #555;
+}
+
+@media screen and (max-width: 1025px) {
+  .gallery {
+    width: auto;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .gallery {
+    column-count: 2;
+    padding: 20px;
+    column-gap: 7px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .gallery {
+    column-count: 1;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .title {
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+  }
+
+  .footer {
+    padding: 20px 5px 5px;
+  }
+}
