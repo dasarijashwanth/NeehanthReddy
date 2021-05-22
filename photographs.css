@@ -82,7 +82,7 @@ body {
 
 @media screen and (max-width: 1025px) {
   .gallery {
-    width: auto;
+    width: 90%;
   }
 
   .title {
@@ -93,6 +93,7 @@ body {
 
 @media screen and (max-width: 787px) {
   .gallery {
+    width: 85%;
     column-count: 2;
     padding: 20px;
     column-gap: 7px;
@@ -109,6 +110,7 @@ body {
 
 @media screen and (max-width: 426px) {
   .gallery {
+    width: 82%;
     column-count: 1;
   }
 
